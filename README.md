@@ -24,7 +24,7 @@ year={2019}
 }
 ```
 
-## Modules and Example dataset
+## Modules and Example Dataset
 This repository hosts the desktop-version implementation of ArmTroi, which can achieve real-time left arm skeleton tracking using a smartwatch worn on user's left wrist, and an example dataset. The code consists of three modules and has been tested using MATLAB R2018b. 
 
 ### Three Modules
