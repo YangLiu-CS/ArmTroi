@@ -1,0 +1,30 @@
+latency = 1;
+warmLatency = 5;
+boolContinuity = 0;
+num_continuity = 0;
+factor_continuity = 0;
+boolWeight = 0;
+updateMethod = 0;
+factor_weight = 0;
+top_num = 1;
+
+N = 14;
+trackElbow = cell(1,N);
+trackWrist = cell(1,N);
+realtimeFactor = zeros(1,N);
+numW = zeros(1,N);
+
+[trackElbow{1},~,~,~,trackWrist{1},~,realtimeFactor(1),numW(1)] = ArmTroiSearch_realtime_optimize(orienData{1,1}(200,:),orienData{1,1}(519:1040,:),accData{1,1}(519:1040,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{2},~,~,~,trackWrist{2},~,realtimeFactor(2),numW(2)] = ArmTroiSearch_realtime_optimize(orienData{1,2}(200,:),orienData{1,2}(553:1087,:),accData{1,2}(553:1087,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{3},~,~,~,trackWrist{3},~,realtimeFactor(3),numW(3)] = ArmTroiSearch_realtime_optimize(orienData{1,3}(200,:),orienData{1,3}(459:986,:),accData{1,3}(459:986,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{4},~,~,~,trackWrist{4},~,realtimeFactor(4),numW(4)] = ArmTroiSearch_realtime_optimize(orienData{1,4}(200,:),orienData{1,4}(494:1220,:),accData{1,4}(494:1220,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{5},~,~,~,trackWrist{5},~,realtimeFactor(5),numW(5)] = ArmTroiSearch_realtime_optimize(orienData{1,5}(100,:),orienData{1,5}(230:770,:),accData{1,5}(230:770,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{6},~,~,~,trackWrist{6},~,realtimeFactor(6),numW(6)] = ArmTroiSearch_realtime_optimize(orienData{1,6}(200,:),orienData{1,6}(563:1049,:),accData{1,6}(563:1049,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{7},~,~,~,trackWrist{7},~,realtimeFactor(7),numW(7)] = ArmTroiSearch_realtime_optimize(orienData{1,7}(200,:),orienData{1,7}(480:1146,:),accData{1,7}(480:1146,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{8},~,~,~,trackWrist{8},~,realtimeFactor(8),numW(8)] = ArmTroiSearch_realtime_optimize(orienData{1,8}(200,:),orienData{1,8}(316:1017,:),accData{1,8}(316:1017,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{9},~,~,~,trackWrist{9},~,realtimeFactor(9),numW(9)] = ArmTroiSearch_realtime_optimize(orienData{1,9}(200,:),orienData{1,9}(408:1095,:),accData{1,9}(408:1095,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{10},~,~,~,trackWrist{10},~,realtimeFactor(10),numW(10)] = ArmTroiSearch_realtime_optimize(orienData{1,10}(200,:),orienData{1,10}(413:1049,:),accData{1,10}(413:1049,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{11},~,~,~,trackWrist{11},~,realtimeFactor(11),numW(11)] = ArmTroiSearch_realtime_optimize(orienData{1,11}(200,:),orienData{1,11}(484:1017,:),accData{1,11}(484:1017,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{12},~,~,~,trackWrist{12},~,realtimeFactor(12),numW(12)] = ArmTroiSearch_realtime_optimize(orienData{1,12}(100,:),orienData{1,12}(352:867,:),accData{1,12}(352:867,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{13},~,~,~,trackWrist{13},~,realtimeFactor(13),numW(13)] = ArmTroiSearch_realtime_optimize(orienData{1,13}(100,:),orienData{1,13}(350:883,:),accData{1,13}(350:883,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
+[trackElbow{14},~,~,~,trackWrist{14},~,realtimeFactor(14),numW(14)] = ArmTroiSearch_realtime_optimize(orienData{1,14}(200,:),orienData{1,14}(410:1338,:),accData{1,14}(410:1338,:),pointCloudFirst,pointCloudSecond,la3,latency,warmLatency,boolContinuity,num_continuity,factor_continuity,boolWeight,updateMethod,factor_weight,top_num,factor_times,factor);
