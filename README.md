@@ -11,7 +11,7 @@ ArmTroi can achieve real-time 3D arm skeleton tracking using a smartwatch. The s
 [![ArmTroi Video](http://img.youtube.com/vi/vmi3jffgvyE/0.jpg)](https://www.youtube.com/watch?v=vmi3jffgvyE "ArmTroi Video")
 
 
-## Citation:
+## Citation
 
 If you find our work useful in your research, please consider citing:
 ```
