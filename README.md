@@ -2,7 +2,7 @@
 
 ArmTroi: Real-time Arm Skeleton Tracking using a Smartwatch. [paper link](https://www.cs.cityu.edu.hk/~zhenjili/2019-MobiSys-ArmTroi.pdf)
 
-Authors: Yang Liu, Jiani Cao, Chengdong Lin, Zhenjiang Li, Zhidan Liu, Kaishun Wu
+Authors: Yang Liu, Zhenjiang Li, Zhidan Liu, Kaishun Wu
 
 ArmTroi can achieve real-time 3D arm skeleton tracking using a smartwatch. The skeleton of each arm is determined from the locations of the elbow and wrist, whereas a smartwatch only senses a single point from the wrist. Result shows that the potential solution space is huge. This underconstrained nature fundamentally challenges the achievement of accurate and real-time arm skeleton tracking. In this study, we propose Hidden Markov Model (HMM) state reorganization, hierarchical search, likelihood-based pruning, and distance-based pruning to improve the heavyweight computation of the state-of-art arm tracking model [MobiSys'16] and achieve real-time tracking even on mobile phone.
 
